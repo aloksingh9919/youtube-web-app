@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Fjalla+One&family=Kanit:wght@500&family=Lumanosimo&family=Noto+Sans+Cypro+Minoan&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  /* @apply bg-dark-1; */
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family:  'Roboto', sans-serif;
+}
+/* .bg-dark-1 {
+  @apply bg-rgb(15, 15, 15) text-white;
+} */
+.bi{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  margin: 12px;
+  padding: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+}
+.bi:hover{
+  background-color: rgb(34, 34, 34);
+  border-radius: 8px;
+}
+
+.bi>span {
+  font-size: 14px;
+  background:none;
+}
+.bot{
+  @apply bg-transparent 
+}
+
+.leftsidebar {
+  @apply  sticky  left-0 top-0 z-20 flex h-screen w-fit flex-col pt-14 ;
+}
+/* -----------------Small manu bar------------------------- */
+
+.bot2{
+  @apply m-1 flex flex-col items-center mt-4 pt-2 pb-2
+}
+
+.small2{
+@apply
+text-[12px]  pt-[6px]  bg-transparent 
+}
+
+.bot2:hover{ background-color: rgb(34, 34, 34); 
+  border-radius: 6px
+}
+.smallleftsidebar {
+  @apply  sticky left-0 top-0 z-20 flex h-screen w-fit flex-col pt-14 
+}
+/* .smallleftsidebar {
+  @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col pt-14 max-md:flex-row max-md:w-full  flex-1  max-md:h-fit max-md:justify-between
+ max-md:static max-md:p-0 max-md:m-0 max-md:border-t-2 max-md:border-zinc-800 max-md:z-[200] 
+} */
+
+/* ---------------------dialogueBox--------------------- */
+ 
+.dialouge{
+  @apply list-none flex gap-3 items-center  px-4 py-2 bg-transparent hover:bg-zinc-700 
+}
+.textdialouge{
+  @apply text-[15px]   bg-transparent;
+}
+.icondialouge{
+  @apply  bg-transparent
+}
+
+.topbar {
+  @apply fixed top-0 z-30 flex w-full items-center justify-between px-6 py-3;
+}
+
+.main-container {
+  @apply flex min-h-screen px-[3%] pt-10 max-sm:px-1 ;
+} 
+
+/* ---------------------videocard--------------------- */
+.videocard{
+  @apply  relative w-[400px] h-[400px] cursor-pointer mt-3 mb-3 
+  
+}
+
+.thumbnails{
+  @apply h-[225px] w-[400px] rounded-2xl object-cover
+
+}
+
+
+
+
