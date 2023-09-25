@@ -33,6 +33,7 @@ const Searchbar = () => {
             <AiOutlineSearch
               size={28}
               className="mr-[2px] bg-transparent mt-[2px] max-sm:w-[22px] max-sm:h-[22px]  "
+            onClick={(e)=>handleSubmitSearch(e)}
             />
           )}
 
@@ -51,6 +52,7 @@ const Searchbar = () => {
           <AiOutlineSearch
             size={28}
             className="mr-[2px] bg-transparent mt-[2px] max-sm:w-[20px] max-sm:h-[20px] max-sm:mr-0"
+            onClick={(e)=>handleSubmitSearch(e)}
           />
         </div>
       </div>

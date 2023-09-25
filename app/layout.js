@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           </div>
           <div className="main-container ">{children}</div>
         </main>
-        <div className="fixed bottom-0">
+        <div className="fixed bottom-[-1px] w-full">
           <Bottombar/>
         </div>
       </body>

@@ -13,6 +13,7 @@ const page = ({ params }) => {
       )
       .then((res) => {
         setvideo(res.data.items);
+        console.log(res.data)
       });
   }, [params.id]);
 

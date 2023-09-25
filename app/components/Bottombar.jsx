@@ -9,7 +9,7 @@ const Smallmenu = () => {
   return (
 
   <div className="  border-t-2 border-zinc-700
-   flex justify-evenly overflow-hidden z-20 w-screen md:hidden items-center" >
+   flex justify-evenly overflow-hidden z-20 w-full md:hidden items-center" >
      <Link href="/" >
      
         <div className="w-16 text-center m-1 cursor-pointer hover:bg-zinc-800 p-1 rounded-md">
