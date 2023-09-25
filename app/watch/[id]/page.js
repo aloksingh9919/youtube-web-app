@@ -9,6 +9,8 @@ const Page = ({ params }) => {
   const [video, setVideo] = useState([]);
   const [category, setCategory] = useState('');
 
+  const apiKey = process.env.API_KEY;
+  console.log(apiKey,'data key yt')
   useEffect(() => {
     let videoID = params.id;
     axios
